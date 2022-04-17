@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconpkb.png">
+    <title>Pokemon Battle Game</title>
+    <link rel="stylesheet" href="public/css/global.css" type="text/css">
+
+    <style type="text/css">
+        @import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+        h1 {
+            font-size: 70PX;
+            font-family: 'Pokemon Solid', sans-serif;
+            color: rgb(255, 213, 0);
+            text-shadow: -1px 0 black, 0 3px rgb(101, 131, 251), 5px 0 rgb(101, 131, 251), 0 -2px black;
+        }
+        
+        h2 {
+            font-size: 14px;
+        }
+        
+        #layOver {
+            position: fixed;
+            height: 680px;
+            width: 1344px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, .9);
+            z-index: 100;
+        }
+        
+        #layOver h2 {
+            color: white;
+        }
+        
+        #startBtn {
+            position: absolute;
+            top: 88%;
+            bottom: 12%;
+            left: 40%;
+            right: 45%;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            height: 30px;
+            width: 300px;
+            border: 1px;
+            font-weight: 600;
+            border-radius: 7px;
+            background: #a6a8a7;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="game">
+        <div id="layOver">
+            <h1>PoKeMoN</h1>
+            <h2>Rules : </h2>
+            <h2>1) Each Player has 100 HP</h2>
+            <h2>2) First to 0 HP lose</h2>
+            <h2>3) Attack dealt 12 damage</h2>
+            <h2>4) S Attack dealt 20 damage</h2>
+            <h2>5) Deffend block normal attack</h2>
+            <h2>6) S Deffend block S attack</h2>
+            <h2>7) Both Attack/S Attack = Both took damage</h2>
+            <h2>8) Both Deffend/S Deffend = Nothing</h2>
+            <h2>9) Attack || S deffend or otherwise = deffender took damage but less</h2>
+            <br><br>
+            <button id="startBtn" onclick="window.location.href='battlepage.html'" style="cursor: pointer;">Start</button>
+        </div>
+    </div>
+</body>
+
+</html>
